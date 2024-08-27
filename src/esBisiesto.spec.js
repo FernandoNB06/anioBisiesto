@@ -18,4 +18,10 @@ describe("Función esBisiesto", () => {
         expect(esBisiesto(2012)).toEqual(true);
         expect(esBisiesto(2016)).toEqual(true);
       });
+
+      it("debería retornar false para los años que no son divisibles por 4", () => {
+        expect(esBisiesto(2017)).toEqual(false);
+        expect(esBisiesto(2018)).toEqual(false);
+        expect(esBisiesto(2019)).toEqual(false);
+      });
 });
